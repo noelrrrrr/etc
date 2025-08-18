@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'FkDoodle';
+    src: url('https://noelrrrrr.github.io/etc/FkDoodleRegular.ttf') format('truetype');
+}
+
+.mainprobox {
+  max-width: 900px;
+  min-width: 400px;
+  width: 93%;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #020857;
+  font-family: 'FkDoodle';
+}
+
+.pnklogo {
+  pointer-events: none;
+  user-select: none;
+  aspect-ratio: 1/1;
+  width: 130px;
+  margin: auto;
+ }
+
+.flex {
+  display:flex;
+}
+
+.leftpic {
+  display:flex;
+  flex-direction: column;
+  margin-right: min(-54px,-5vw);
+  margin-top: 25px;
+}
+
+.leftpic1 {
+  aspect-ratio: 115/150;
+  width: 150px;
+  border: 8px solid #fff;
+  rotate: 6deg;
+  filter: drop-shadow(1px 3px 6px #888);
+}
+
+.leftpic2 {
+  aspect-ratio: 115/150;
+  width: 150px;
+  border: 8px solid #fff;
+  rotate: -6deg;
+  filter: drop-shadow(1px 3px 6px #888);
+}
+
+.leftpic3 {
+  aspect-ratio: 115/150;
+  width: 150px;
+  border: 8px solid #fff;
+  rotate: 6deg;
+  filter: drop-shadow(1px 3px 6px #888);
+  margin-left: -8px;
+}
+
+.mainbox {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.headbg {
+  max-width: 800px;
+  min-width: 400px;
+  height: 80px;
+  margin: auto;
+  box-sizing: border-box;
+  background: #fff url(https://iili.io/F5PyxQs.png)top/100% repeat;
+  margin-top: -5px;
+}
+
+.rightpic {
+  aspect-ratio: 115/150;
+  width: 150px;
+  border: 8px solid #fff;
+  position: relative;
+  float: right;
+  filter: drop-shadow(1px 3px 6px #888);
+  rotate: -7deg;
+  top: -40px;
+  right: -25px;
+}
+
+.middlebg {
+  max-width: 800px;
+  min-width: 400px;
+  min-height: 525px;
+  margin: auto;
+  box-sizing: border-box;
+  background: #fff url(https://iili.io/F5PyxQs.png)top/100% repeat;
+  margin-top: -2px;
+}
+
+.textbox {
+  padding: 20px 45px 5px 0px;
+  box-sizing: border-box;
+  line-height: 44.7px;
+  font-size: 21px;
+  padding-left: min(10vw, 125px);
+}
+
+.roleplaybox {
+  margin-bottom: 78px;
+  text-align: justify;
+  min-height: 260px;
+}
+
+.ps {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.bottombg {
+  max-width: 800px;
+  min-width: 400px;
+  height: 80px;
+  margin: auto;
+  box-sizing: border-box;
+  background: #fff url(https://iili.io/F5PyxQs.png)bottom/100% repeat;
+  margin-top: -2px;
+}
