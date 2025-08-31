@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@300&family=Wix+Madefor+Text&display=swap');
+
+@font-face {
+  font-family: 'Hikou Outline';
+  src: url(https://dl.dropbox.com/s/dg0q16ooq2vbies/Hikou%20Outline.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Hikou';
+  src: url(https://dl.dropbox.com/s/8sbzv5r5ma6bpef/Hikou%20Regular.otf) format('woff2');
+}
+
+#mapleroom {
+  --width: 95%;
+  --image-size: 80px;
+  --left-spacing: 70px;
+  --accent: #A2D2FF;
+  --borders: #707070;
+  --bg-color: #e3e3e3;
+  --text: #080a16;
+  --sub-text: #c3c3c3;
+}
+
+#mapleroom .rwrap {
+  width: var(--width);
+  background: #252525 url(https://i.imgur.com/K5fOQCG.png) fixed center/cover;
+  background-blend-mode: multiply;
+  overflow: hidden;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+#mapleroom .rwrap::before, #mapleroom .rwrap::after {
+  content: "";
+  width: 1px;
+  display: block;
+  background: var(--borders);
+  position: absolute;
+  left: var(--left-spacing);
+}
+
+#mapleroom .rwrap::before {
+  height: 60px;
+  top: 0;
+}
+
+#mapleroom .rwrap::after {
+  height: calc(100% - 160px);
+  top: 160px;
+}
+
+#mapleroom .rheader {
+  width: calc(100% - var(--left-spacing) * 1.3);
+  margin: 65px 0 35px 0;
+}
+
+#mapleroom .rheader .rtitle {
+  position: relative;
+  color: var(--accent);
+  text-align: left;
+  text-transform: uppercase;
+  font: 80px/100% 'Hikou Outline', sans-serif;
+  letter-spacing: -3px;
+}
+
+#mapleroom .rheader .rtitle::before {
+  width: 30px;
+  height: 1px;
+  background: var(--borders);
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 42px;
+}
+
+#mapleroom .rpost {
+  position: relative;
+  margin: 0 40px 10px calc(var(--left-spacing) + 40px);
+  padding: 40px 50px;
+  background: var(--bg-color);
+  background-clip: padding-box;
+  border: 10px solid #00000033;
+}
+
+#mapleroom .rpost > div {
+  color: var(--text);
+  font: 16px/200% 'Pridi', serif;
+  letter-spacing: .2px;
+  text-align: justify;
+}
+
+#mapleroom .rinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 40px;
+}
+
+#mapleroom .rsub {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+}
+
+#mapleroom .rsub > div {
+  text-align: justify;
+  color: var(--sub-text);
+  font: 10px/150% 'Wix Madefor Text', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#mapleroom .rimg {
+  width: var(--image-size);
+  height: var(--image-size);
+  margin: 0 20px;
+  border: 1px solid var(--borders);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+#mapleroom .rimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#mapleroom:after {
+  display: block;
+  content: "「R」";
+  font: bold 7px/12px 'Arial', sans-serif;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+#mapleroom:hover::after {
+  content: "「ROSS RESOURCES」"
+}
